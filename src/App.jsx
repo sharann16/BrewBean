@@ -14,7 +14,7 @@ function App() {
   return (
       <div>
         <Header/>
-        <div className='max-w-7xl flex flex-col items-center mx-auto px-5 pt-10'>
+        <div className='max-w-7xl flex flex-col items-center mx-auto md:px-5 pt-10'>
           <Home/>
           <Menus/>
         </div>
