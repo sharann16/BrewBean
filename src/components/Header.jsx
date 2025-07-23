@@ -14,9 +14,9 @@ function Header() {
     }
     
   return (
-    <div className='flex  shrink-0  justify-between px-10 py-5 border-b sticky z-50 top-0 backdrop-blur-lg ' >
+    <div className='flex  shrink-0  justify-between items-center px-2     md:px-10 py-2 border-b sticky z-50 top-0 backdrop-blur-lg ' >
         <div>
-            <img src={logo} alt="Brew Bean Logo" className="h-12 w-12 rounded-full shadow-amber-950 shadow-2xl"  />
+            <img src={logo} alt="Brew Bean Logo" className="h-8 w-8 md:h-12 md:w-12 rounded-full shadow-amber-950 shadow-2xl"  />
         </div>
           <div className=' hidden md:flex gap-5 items-center'>
             {navItems.map((items,index)=>(
