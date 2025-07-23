@@ -12,7 +12,7 @@ function Menus() {
       <div className=' flex gap-3  p-2 mb-10 max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide'> 
         {HotBeverages.map((item,index)=>(
           <div key={index} className='shrink-0 hover:scale-110 my-5 transition-all duration-150 ml-5'  >
-                    <MenuCard item={item}/>
+            <MenuCard item={item} name="Hot Beverages" image={item.image}/>
 
           </div>
         ))}
@@ -22,7 +22,7 @@ function Menus() {
       <div className=' flex gap-3 p-2 mb-10 max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide '>
         {ColdBrews.map((item, index) => (
           <div key={index} className='shrink-0  hover:scale-110 my-5 transition-all duration-150 ml-5' >
-            <MenuCard item={item} />
+            <MenuCard item={item} name="Cold Brews" image={item.image} />
 
           </div>
         ))}
@@ -32,7 +32,7 @@ function Menus() {
       <div className=' flex gap-3 p-2 mb-10  max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide '>
         {Pastries.map((item, index) => (
           <div key={index} className='shrink-0  hover:scale-110 my-5 transition-all duration-150 ml-5' >
-            <MenuCard item={item} />
+            <MenuCard item={item} name="Pastries" image={item.image} />
 
           </div>
         ))}
