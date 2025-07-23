@@ -9,9 +9,9 @@ function Menus() {
       <h2 className='text-xl md:text-2xl flex justify-center font-bold mt-5 mb-1'>Menus</h2>
 
       <h2 className=' text-xl font-semibold md:text-2xl p-2 mt-5 mb-5'>HotBeverages</h2>
-      <div className=' flex gap-3 p-2 mb-10 max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide '> 
+      <div className=' flex gap-3  p-2 mb-10 max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide'> 
         {HotBeverages.map((item,index)=>(
-          <div key={index} className='shrink-0' >
+          <div key={index} className='shrink-0 hover:scale-110 my-5 transition-all duration-150 ml-5'  >
                     <MenuCard item={item}/>
 
           </div>
@@ -21,7 +21,7 @@ function Menus() {
       <h2 className=' text-xl font-semibold md:text-2xl p-2 mt-5 mb-5'>ColdBrews</h2>
       <div className=' flex gap-3 p-2 mb-10 max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide '>
         {ColdBrews.map((item, index) => (
-          <div key={index} className='shrink-0' >
+          <div key={index} className='shrink-0  hover:scale-110 my-5 transition-all duration-150 ml-5' >
             <MenuCard item={item} />
 
           </div>
@@ -31,7 +31,7 @@ function Menus() {
       <h2 className=' text-xl font-semibold md:text-2xl p-2 mt-5 mb-5'>Pastries</h2>
       <div className=' flex gap-3 p-2 mb-10  max-w-7xl overflow-x-auto scroll-smooth scrollbar-hide '>
         {Pastries.map((item, index) => (
-          <div key={index} className='shrink-0' >
+          <div key={index} className='shrink-0  hover:scale-110 my-5 transition-all duration-150 ml-5' >
             <MenuCard item={item} />
 
           </div>

@@ -8,9 +8,11 @@ import { RxCross2 } from "react-icons/rx";
 
 function Header() {
     const [toggle , setToggle] = useState(false);
+
     function handleToggle() {
         setToggle(!toggle);
     }
+    
   return (
     <div className='flex  shrink-0  justify-between px-10 py-5 border-b sticky z-50 top-0 backdrop-blur-lg ' >
         <div>
@@ -19,7 +21,7 @@ function Header() {
           <div className=' hidden md:flex gap-5 items-center'>
             {navItems.map((items,index)=>(
                 <div key={index}>
-                    <a href={items.link} className='font-semibold text-[16px]   '>{items.name}</a>
+                    <a href={items.link}  className='font-semibold text-[16px] hover:underline underline-offset-2  '>{items.name}</a>
                 </div>
             ))}
         </div>
